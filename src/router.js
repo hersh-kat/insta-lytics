@@ -21,16 +21,6 @@ export default new Router({
           component: () => import(/* webpackChunkName: "demo" */ './views/Dashboard.vue')
         },
         {
-          path: '/GraphicMaker',
-          name: 'graphicMaker',
-          component: () => import(/* webpackChunkName: "demo" */ './views/GraphicMaker.vue')
-        },
-        {
-          path: '/PosterMaker',
-          name: 'PosterMaker',
-          component: () => import(/* webpackChunkName: "demo" */ './views/PosterMaker.vue')
-        },
-        {
           path: '/postAnalytics',
           name: 'postAnalytics',
           component: () => import(/* webpackChunkName: "demo" */ './views/PostAnalytics.vue')

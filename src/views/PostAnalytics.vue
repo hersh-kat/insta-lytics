@@ -142,8 +142,8 @@ Vue.use(BootstrapVue)
     },
     data() {
       return {
-        facebookToken: "EAALLZCjUDvuUBAMNutTwC9d94HGi9wcijdeCmHD8FZCby4lTlXFRvPY8IAd3n6AUODoxy2s1aE3GtZAUb3Rd0xz36hLdngsEzpPibvDU2af2Ij5NJAWZC7F5f5FXMA5ZBDcLOnMfmddogtZAfjK61SY3u1Asb9boMZD",
-        instagramID: "17841404187319036",
+        facebookToken: /***REMOVED***/,
+        instagramID: /***REMOVED***/,
         mediaObjects: [],
         allImpressionsData: [],
         allEngagementData: [],
@@ -178,6 +178,7 @@ Vue.use(BootstrapVue)
 
               var sample = response.data.data
 
+              console.log(sample)
               self.allImpressionsData.push(sample[0].values[0].value.toString())
               self.allEngagementData.push(sample[1].values[0].value.toString())
               self.allReachData.push(sample[2].values[0].value.toString())

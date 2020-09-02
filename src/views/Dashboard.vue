@@ -198,6 +198,7 @@
                                   :height="350"
                                   ref="barChart"
                                   :chart-data="barChart.chartData"
+                                  :extra-options="barChart.extraOptions"
                           >
                         </bar-chart>
                       </card>
@@ -261,15 +262,6 @@
           },
           extraOptions: chartConfigs.lineChartOptionsBlue,
         },
-        redBarChart: {
-          chartData: {
-            labels: ['Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-            datasets: [{
-              label: 'Sales',
-              data: [25, 20, 30, 22, 17, 29]
-            }]
-          }
-        },
         pieChart: {
           allData: [],
           allLabels: [],
@@ -284,8 +276,13 @@
             labels: [],
             datasets: [{
               data: []
-            }]
-          }
+            }],
+          },
+          extraOptions:{
+            legend: {
+              display: false,
+            },
+          },
         },
         facebookToken: "EAALLZCjUDvuUBAMNutTwC9d94HGi9wcijdeCmHD8FZCby4lTlXFRvPY8IAd3n6AUODoxy2s1aE3GtZAUb3Rd0xz36hLdngsEzpPibvDU2af2Ij5NJAWZC7F5f5FXMA5ZBDcLOnMfmddogtZAfjK61SY3u1Asb9boMZD",
         instagramID: "17841404187319036",

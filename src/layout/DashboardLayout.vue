@@ -14,8 +14,6 @@
           }"
         />
         <sidebar-item :link="{name: 'Post Analytics', icon: 'ni ni-chart-pie-35 text-orange', path: '/postAnalytics'}"/>
-        <sidebar-item :link="{name: 'Graphic Maker', icon: 'ni ni-atom text-red', path: '/graphicMaker'}"/>
-        <sidebar-item :link="{name: 'Poster Maker', icon: 'ni ni-image text-yellow', path: '/PosterMaker'}"/>
 
       </template>
     </side-bar>
